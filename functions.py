@@ -30,5 +30,14 @@ print circle_area(5)
 def sphere_volume(v):
     return 3.14159265359 * 1.333333333333 * (v**3)
 print sphere_volume(5)
+def sphere_volume1 (r):
+    return 3.14159265359 * 1.333333333333 * (r**3)
+print sphere_volume1(10/2)
+def sphere_volume2(r):
+    return 3.14159265359 *1.333333333333 * (r**3)
+print sphere_volume2(20/2)
+def avg_volume(a,b):
+    return a + b
+a= add 
 
 
