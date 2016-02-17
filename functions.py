@@ -71,5 +71,6 @@ print msg_box("Hello")
 print msg_box("I eat cats!")
 
 addition= add(7,7)
-subtraction=
+subtraction= sub(8,4)
+multiplication= mul
 
