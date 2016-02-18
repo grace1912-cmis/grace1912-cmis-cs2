@@ -56,21 +56,99 @@ print msg_box("Hello")
 #Returning a message box with the given phrase
 print msg_box("I eat cats!")
 
-print add(7,7)
-print sub(8,4)
-print mul(9,2)
-print div(4,2)
-print div(86400,3600)
-print circle_area(5)
-print sphere_volume(5)
-print avg_volume (10,20)
-print area(1,2,2.5)
-print right_align( "Hello" )
-print center("Hello")
-print msg_box("Hello")
-print msg_box("I eat cats!")
 
-addition= add(7,7)
-subtraction= sub(8,4)
-multiplication= mul
+#Calling functions1
+addition= add(8,7)
+a=8
+b=7
+q= add(a,b)
+print msg_box(str(q))
+subtraction= sub(6,4)
+a=6
+b=4
+q= sub(a,b)
+print msg_box(str(q))
+multiplication= mul(4,2)
+a=4
+b=2
+q= mul(a,b)
+print msg_box(str(q))
+division= div(8,2)
+a=8
+b=2
+q= div(a,b)
+print msg_box(str(q))
+hours_to_seconds= div(96400,3600)
+a=96400
+b=3600
+q= div(a,b)
+print msg_box(str(q))
+area_of_circle= circle_area(4)
+a=4
+print msg_box(str(a))
+volume_of_sphere= sphere_volume(7)
+a=7
+print msg_box(str(a))
+average_volume= avg_volume (20,40)
+a=20
+b=40
+print msg_box(str(a)+", "+str(b))
+area_of_three_sides= area(2,3,3.5)
+a=2
+b=3
+c=3.5
+print msg_box(str(a)+", "+str(b)+", "+str(c))
+right_align= right_align( "Hey" )
+a="Hey"
+print msg_box(str(a))
+center= center("HaHaHa")
+a= "HaHaHa"
+print msg_box(str(a))
+message_box_one= msg_box("Hi")
+message_box_two= msg_box("I eat burgers!")
 
+#Calling functions 2
+z= add(3,5)
+a=3
+b=5
+print msg_box(str(a)+", "+str(b))
+s= sub(6,1)
+a=6
+b=1
+print msg_box(str(a)+", "+str(b))
+m= mul(3,2)
+a=3
+b=2
+print msg_box(str(a)+", "+str(b))
+d= div(10,5)
+a=10
+b=5
+q= div(a,b)
+print msg_box(str(q))
+hrs_to_sec= (76400,3600)
+a=76400
+b=3600
+print msg_box(str(a)+", "+str(b))
+c_a= circle_area(3)
+a=3
+print msg_box(str(a))
+v_s= sphere_volume(9)
+a=9
+print msg_box(str(a))
+a_v= avg_volume (60,40)
+a=60
+b=40
+print msg_box(str(a)+", "+str(b))
+a_th_s= area(4,6,6.5)
+a=4
+b=6
+c=6.5
+print msg_box(str(a)+", "+str(b)+", "+str(c))
+r_a= right_align( "Bye" )
+a= "Bye"
+print msg_box(str(a))
+c= center("Goaway")
+a= "Goaway"
+print msg_box(str(a))
+mb1= msg_box("Eww")
+mb2= msg_box("I hate you")
