@@ -92,34 +92,34 @@ print msg_box(str(a))
 average_volume= avg_volume (20,40)
 a=20
 b=40
-print msg_box(str(a)+", "+str(b))
+print msg_box(str(average_volume))
 area_of_three_sides= area(2,3,3.5)
 a=2
 b=3
 c=3.5
-print msg_box(str(a)+", "+str(b)+", "+str(c))
+print msg_box(str(area_of_three_sides))
 right_align= right_align( "Hey" )
-a="Hey"
 print msg_box(str(a))
 center= center("HaHaHa")
 a= "HaHaHa"
 print msg_box(str(a))
 message_box_one= msg_box("Hi")
+print msg_box(str(message_box_one))
 message_box_two= msg_box("I eat burgers!")
-
+print msg_box(str(message_box_two))
 #Calling functions 2
 z= add(3,5)
 a=3
 b=5
-print msg_box(str(a)+", "+str(b))
+print msg_box(str(z))
 s= sub(6,1)
 a=6
 b=1
-print msg_box(str(a)+", "+str(b))
+print msg_box(str(s))
 m= mul(3,2)
 a=3
 b=2
-print msg_box(str(a)+", "+str(b))
+print msg_box(str(m))
 d= div(10,5)
 a=10
 b=5
@@ -128,22 +128,23 @@ print msg_box(str(q))
 hrs_to_sec= (76400,3600)
 a=76400
 b=3600
-print msg_box(str(a)+", "+str(b))
+c= div(76400, 3600)
+print msg_box(str(c))
 c_a= circle_area(3)
 a=3
-print msg_box(str(a))
+print msg_box(str(c_a))
 v_s= sphere_volume(9)
 a=9
-print msg_box(str(a))
+print msg_box(str(v_s))
 a_v= avg_volume (60,40)
 a=60
 b=40
-print msg_box(str(a)+", "+str(b))
+print msg_box(str(a_v))
 a_th_s= area(4,6,6.5)
 a=4
 b=6
 c=6.5
-print msg_box(str(a)+", "+str(b)+", "+str(c))
+print msg_box(str(a_th_s))
 r_a= right_align( "Bye" )
 a= "Bye"
 print msg_box(str(a))
@@ -151,4 +152,6 @@ c= center("Goaway")
 a= "Goaway"
 print msg_box(str(a))
 mb1= msg_box("Eww")
+print msg_box(str(mb1))
 mb2= msg_box("I hate you")
+print msg_box(str(mb2))
