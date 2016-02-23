@@ -145,10 +145,10 @@ a=4
 b=6
 c=6.5
 print msg_box(str(a_th_s))
-r_a= right_align( "Bye" )
+r_a= right_align("Bye")
 a= "Bye"
-print msg_box(str(a))
-c= center("Goaway")
+print msg_box(str(right_align("Bye"))
+c = center("Goaway")
 a= "Goaway"
 print msg_box(str(a))
 mb1= msg_box("Eww")
