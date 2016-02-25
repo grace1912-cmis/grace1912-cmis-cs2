@@ -58,100 +58,59 @@ print msg_box("I eat cats!")
 
 
 #Calling functions1
-addition= add(8,7)
-a=8
-b=7
-q= add(a,b)
-print msg_box(str(q))
-subtraction= sub(6,4)
-a=6
-b=4
-q= sub(a,b)
-print msg_box(str(q))
-multiplication= mul(4,2)
-a=4
-b=2
-q= mul(a,b)
-print msg_box(str(q))
-division= div(8,2)
-a=8
-b=2
-q= div(a,b)
-print msg_box(str(q))
-hours_to_seconds= div(96400,3600)
-a=96400
-b=3600
-q= div(a,b)
-print msg_box(str(q))
-area_of_circle= circle_area(4)
-a=4
-print msg_box(str(a))
-volume_of_sphere= sphere_volume(7)
-a=7
-print msg_box(str(a))
-average_volume= avg_volume (20,40)
-a=20
-b=40
-print msg_box(str(average_volume))
-area_of_three_sides= area(2,3,3.5)
-a=2
-b=3
-c=3.5
-print msg_box(str(area_of_three_sides))
-right_align= right_align( "Hey" )
-print msg_box(str(a))
-center= center("HaHaHa")
-a= "HaHaHa"
-print msg_box(str(a))
-message_box_one= msg_box("Hi")
-print msg_box(str(message_box_one))
-message_box_two= msg_box("I eat burgers!")
-print msg_box(str(message_box_two))
+addition1= add(8,7)
+subtraction1= sub(6,4)
+multiplication1= mul(4,2)
+division1= div(8,2)
+hours_to_seconds1= div(96400,3600)
+area_of_circle1= circle_area(4)
+volume_of_sphere1= sphere_volume(7)
+average_volume1= avg_volume (20,40)
+area_of_three_sides1= area(2,3,3.5)
+right_align1= right_align( "Hey" )
+center1= center("HaHaHa")
+message_box_one1= msg_box("Hi")
+message_box_two1= msg_box("I eat burgers!")
 #Calling functions 2
-z= add(3,5)
-a=3
-b=5
-print msg_box(str(z))
-s= sub(6,1)
-a=6
-b=1
-print msg_box(str(s))
-m= mul(3,2)
-a=3
-b=2
-print msg_box(str(m))
-d= div(10,5)
-a=10
-b=5
-q= div(a,b)
-print msg_box(str(q))
-hrs_to_sec= (76400,3600)
-a=76400
-b=3600
-c= div(76400, 3600)
-print msg_box(str(c))
-c_a= circle_area(3)
-a=3
-print msg_box(str(c_a))
-v_s= sphere_volume(9)
-a=9
-print msg_box(str(v_s))
-a_v= avg_volume (60,40)
-a=60
-b=40
-print msg_box(str(a_v))
-a_th_s= area(4,6,6.5)
-a=4
-b=6
-c=6.5
-print msg_box(str(a_th_s))
-r_a= right_align("Bye")
-a= "Bye"
-print msg_box(str(right_align("Bye"))
-c = center("Goaway")
-a= "Goaway"
-print msg_box(str(a))
-mb1= msg_box("Eww")
-print msg_box(str(mb1))
-mb2= msg_box("I hate you")
-print msg_box(str(mb2))
+addition2= add(3,5)
+subtraction2= sub(6,1)
+multiplication2= mul(3,2)
+division2= div(10,5)
+hrs_to_sec2= (76400,3600)
+circle_area2= circle_area(3)
+volume_of_sphere2= sphere_volume(9)
+average_volume2= avg_volume (60,40)
+area_of_three_sides2= area(4,6,6.5)
+rightalign2= right_align("Bye")
+center2= center("Goaway")
+messagebox_one2= msg_box("Eww")
+messagebox_two2= msg_box("I hate you")
+#printing functions1
+print msg_box (str(addition1))
+print msg_box (str(subtraction1))
+print msg_box (str(multiplication1))
+print msg_box (str(division1))
+print msg_box (str(hours_to_seconds1))
+print msg_box (str(area_of_circle1))
+print msg_box (str(volume_of_sphere1))
+print msg_box (str(average_volume1))
+print msg_box (str(area_of_three_sides1))
+print msg_box (str(right_align1))
+print msg_box (str(center1))
+print msg_box (str(message_box_one1))
+print msg_box (str(message_box_two1))
+#printing functions2
+print msg_box (str(addition2))
+print msg_box (str(subtraction2))
+print msg_box (str(multiplication2))
+print msg_box (str(division2))
+print msg_box (str(hrs_to_sec2))
+print msg_box (str(circle_area2))
+print msg_box (str(volume_of_sphere2))
+print msg_box (str(average_volume2))
+print msg_box (str(area_of_three_sides2))
+print msg_box (str(rightalign2))
+print msg_box (str(center2))
+print msg_box (str(messagebox_one2))
+print msg_box (str(messagebox_two2))
+
