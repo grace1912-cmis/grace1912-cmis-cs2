@@ -15,7 +15,7 @@ print mul(9,2)
 
 #Divided two arguments
 def div(a,b):
-    return a/b
+    return float(a)/b
 print div(4,2)
 
 #Conversion of hours to seconds
@@ -61,7 +61,7 @@ print msg_box("I eat cats!")
 addition1= add(8,7)
 subtraction1= sub(6,4)
 multiplication1= mul(4,2)
-division1= div(8,2)
+division1= div(8,3)
 hours_to_seconds1= div(96400,3600)
 area_of_circle1= circle_area(4)
 volume_of_sphere1= sphere_volume(7)
