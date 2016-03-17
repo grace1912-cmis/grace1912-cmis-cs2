@@ -32,15 +32,15 @@ That's under by ()
     return correctGuess
 
 def main():
-    question1= raw_input("What is the minimum number?: ")
-    question2= raw_input("What is the maximum number?: ")
-    question3= raw_input("I'm thinking of a number from " + str(maximum) + ". \n" + "What do you think it is?: ")
+    minimum_number= raw_input("What is the minimum number?: ")
+    maximum_number= raw_input("What is the maximum number?: ")
+    your_guess= raw_input("I'm thinking of a number between" + str(minimum_number)  +  "and"  +  str(maximum_number) + ". \n" + "What do you think it is?: ")
 
-    comp_number= int(random.randint (big, small))
-    outcome = abs(sub((int(your_guess), comp_number))
+    comp_number= int(random.randint(minimum_number, maximum_number))
+    outcome = abs(sub(int(your_guess), comp_number))
 
-    if comp_number < str(abs(int(your_number)))
-        minGuess = minGuess(comp_number,your_number,outcome)
+    if comp_number < str(abs(int(your_number))):
+        minGuess= minGuess(comp_number,your_number,outcome)
         print minGuess
     elif comp_number > str(abs(int(outcome))):
         maxGuess = (comp_number,your_number,outcome)
