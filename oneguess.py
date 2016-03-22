@@ -34,9 +34,9 @@ That's under by ()
 def main():
     minimum_number= raw_input("What is the minimum number?: ")
     maximum_number= raw_input("What is the maximum number?: ")
-    your_guess= raw_input("I'm thinking of a number between" + str(minimum_number)  +  "and"  +  str(maximum_number) + ". \n" + "What do you think it is?: ")
+    your_guess= raw_input("I'm thinking of a number between " + str(minimum_number) + " and " + str(maximum_number) + ".\n" + "What do you think it is?: ")
 
-    comp_number= int(random.randint(minimum_number, maximum_number))
+    comp_number=  int(random.randint(minimum_number, maximum_number))
     outcome = abs(sub(int(your_guess), comp_number))
 
     if comp_number < str(abs(int(your_number))):
