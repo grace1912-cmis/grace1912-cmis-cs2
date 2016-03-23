@@ -16,10 +16,12 @@ def main():
 	b= int(raw_input("The radius of SphereTwo: "))
 	c= int(raw_input("The radius of SphereThree: "))
 	d= totals(VolumeOne, VolumeTwo, VolumeThree)
+
+VolumeOne=int(volumeOfsphere())
+VolumeTwo=int(volumeOfsphere(VolumeTwo))
+VolumeThree=int(volumeOfsphere(VolumeThree))
+
 out = output (VolumeOne, VolumeTwo, VolumeThree, d)
-VolumeOne=int(volumeOfsphere(a))
-VolumeTwo=int(volumeOfsphere(b))
-VolumeThree=int(volumeOfsphere(c))
 
 
 print out
