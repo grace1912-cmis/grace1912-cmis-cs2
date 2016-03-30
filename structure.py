@@ -2,7 +2,7 @@ import math
 def exp(e, x):
     return e ** x
 def volumeOfsphere(v):
-	volume = (4/3) * math.pi * (int(v) ** 3)
+	return (4/3) * math.pi * (int(v) ** 3)
 def volumeone(a):
 	return float(a)
 def volumeone(b):
