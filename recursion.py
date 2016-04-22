@@ -17,17 +17,44 @@ def main():
 main()
 
 def count_up_from(start, stop):
-    if n >= start:
-        print "Blastoff!"
-    if n >= stop:
+    if start> stop:
         print "Blastoff!"
     else:
-        print n
-        count_up_from(start,stop)
+        print start
+        count_up_from(start + 1,stop)
+def count_down_from(start, stop):
+    if start< stop:
+        print "Blastoff!"
+    else:
+        print start
+        count_down_from(start - 1, stop)
 def main():
     count_up_from(-1,20)
+    count_down_from(20, -1)
 
 main()
-        
+
+
+#Adder
+def main():
+
+    total= float(0)
+    out = """Running total: {} """.format(total)
+    print out
+    NextNumber= int(raw_input("Next Number: ")) + total
+    out= """Running total: {} """.format(NextNumber)
+    print out
+
+
+
+def adder(stuff, total):
+    if stuff == "":
+        return total
+    else:
+        total += float(stuff) 
+        stuff = raw_input("Running total: " + str(total) + "\nNext number: ")
+        return adder(stuff, total)
+    
+adder()
         
 
