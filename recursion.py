@@ -36,25 +36,20 @@ main()
 
 
 #Adder
-def main():
-
-    total= float(0)
-    out = """Running total: {} """.format(total)
-    print out
-    NextNumber= int(raw_input("Next Number: ")) + total
-    out= """Running total: {} """.format(NextNumber)
-    print out
-
-
-
-def adder(stuff, total):
-    if stuff == "":
-        return total
+def adder(Number, total):
+    Number = raw_input("Next number: ")
+    if Number == '':
+        print "The running total is: " + str(total) + "."
     else:
-        total += float(stuff) 
-        stuff = raw_input("Running total: " + str(total) + "\nNext number: ")
-        return adder(stuff, total)
-    
-adder()
+        total = total + float(Number)
+        print "Running total: " + str(total) + "."
+        return adder(Number, total)
+
+adder("Number", 0)
+
+#Biggest
+def
+
+
         
 
