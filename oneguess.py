@@ -2,13 +2,6 @@ import random
 import math
 def sub(a, b):
 	return int(a) - int(b)
-def guessNumber():
-    number = int(raw_input("Type any number(0-10):"))
-    if number > 10 or number < 0:
-        number= random.randint(0,10)
-    numberValue = float(number)/10
-    return numberValue
-
 
 def guessNumber():
     number = int(raw_input("Type any number(0-10):"))
@@ -56,7 +49,7 @@ def main():
         maxGuess = (comp_number,your_guess,outcome)
         print maxGuess
     elif comp_number == abs(int(outcome)):
-        correctGuess = (comp_number,your_guess,outcome)
+        
         print correctGuess
 main ()  
 

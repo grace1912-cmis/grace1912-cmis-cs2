@@ -73,13 +73,17 @@
 #Smallest(float("inf"))
 
 #Power
-def countup(n):
-    if n == 10:
-        print "Blastoff!"
-   else:
-        print n
-        countup(n+1)
-def pow(x,n):
+def pow_(x,n):
+    if n == 0:
+        return 1
+    else:
+        return x * pow_(x, n-1)
+
+def main():
+    print pow_(2,4)
+main()
+
+
     
 
         
