@@ -1,5 +1,6 @@
 import random
-
+def ReGuess(Guessing_Number,Comp_Number):
+	return Difference(First, Second)  
 def Difference(First, Second):
 	return abs(First - Second)
 	
@@ -23,6 +24,8 @@ def main():
 
 	elif int(Guessing_Number) > int(Comp_Number):
 		print "Your Guess was over by" ,str(Difference(int(Guessing_Number), int(Comp_Number)))
+	else:
+		return ReGuess(Guessing_Number,Comp_Number)
 	
 	elif int(Guessing_Number) < int(Comp_Number):
 		print "Your Guess was under by" ,Difference(int(Guessing_Number), int(Comp_Number))
@@ -30,8 +33,3 @@ def main():
 
 
 main()
-
-
-
-
-
