@@ -47,26 +47,34 @@ def GuessingSize():
 		print float(3)
 		return float(3)
 #Bonus
-def Bonus():
-	Bonus = raw_input("Guess a number between 1 and 9 for a bonus chance to fix your score. ")
-	Answer = random.randint(0,9)
-	if int(Bonus) == Answer:
-		print Bonus
+
+def Bonus_2():
+	Bonus2= raw_input("Guess a decimal between 0 and 1: ")
+	Answer = random.random
+	if float(Bonus2) == Answer:
+		print True
 	else:
-		print "No bonus for you you idiot." 
+		return "Game Over"
+
+def Bonus_1():
+	Bonus1 = raw_input("Guess an integer between 1 and 9 for a bonus chance to fix your score: ")
+	Answer = random.randint(0,9) 
+	if int(Bonus1) == Answer:
+		print Bonus1
+	else:
+		return Bonus_2()
 			
 #Calculation of The Points
 def main():
 	Shape=GuessingShape()
 	Type= GuessingType()
 	Size=GuessingSize()
-	YourScore = Shape + Type + Size
+	YourScore = int(Shape)+int(Type) + int(Size)
 
 	output= """
 Your Score is {}
 Try Again.
 """.format(YourScore)
-	print Bonus()
 	if int(YourScore) == int(3):
 		print "Good Job!"
 	elif int(YourScore) == int(6):
@@ -81,8 +89,10 @@ Try Again.
 		print"FAIL"
 	else:
 		print"GAME OVERR"
+#No Bonus
+	if YourScore != int(3) and YourScore != int(6) and YourScore != int(9):
+		print Bonus_1()
 
-		
 main()
 
 	
