@@ -50,7 +50,7 @@ def GuessingSize():
 
 def Bonus_2():
 	Bonus2= raw_input("Guess a decimal between 0 and 1: ")
-	Answer = random.random
+	Answer = random.random()
 	if float(Bonus2) == Answer:
 		print True
 	else:
@@ -85,11 +85,13 @@ Try Again.
 	elif int(YourScore) < int(3) or int(YourScore) > int(3):
 		print"BOOO HOOO"
 		print output
-	elif int(YourScore) < int(6) or int(YOurScore) > int(6):
+	elif not int(YourScore) < int(6) or int(YOurScore) > int(6):
 		print"FAIL"
 	else:
 		print"GAME OVERR"
 #No Bonus
+	if YourScore != int(3) and YourScore != int(6) and YourScore != int(9):
+		print Bonus_1()
 	if YourScore != int(3) and YourScore != int(6) and YourScore != int(9):
 		print Bonus_1()
 
