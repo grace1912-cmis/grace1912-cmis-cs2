@@ -26,20 +26,20 @@
 
 #a1 =8
 #a2 =8
-#a3 =-1
+#a3 =1
 
 #b1 =2
 #b2 =2
 #b3 =4
 
-#c1 =-2
+#c1 =2
 #c2 =4
 #c3 =45
 
 #d1 =6
 #d2 =8
 #d3 =4
-#(12 points)
+#(10 points)
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
@@ -49,43 +49,30 @@
 #Also add a comment label BEFORE the recursive case.
 #It is NOT NECESSARY to print out a running total with each user input.
 
-def Odd_Avg(input,total):
 
-	Number = raw_input("Number: ")
-	if Number== "":
-#Base Case
-		return raw_input("The Average of all the odd Number is: " + str(total)+ ".")
-	else:
-#Recursive Case
-		Average=  float(total) % 2
-		print "Odd Average: " +str(total) + "."
-		return Odd_Avg(total) 
-
-
-def average(sum, ct):
-    n = raw_input("Next: ")
-    if n == "":
+def average(Sum, comp):
+    Number = raw_input("Next: ")
+    if Number == "":
         #BASE CASE
-        return sum/ct
+        return Sum/comp
     else:
         #RECURSIVE CASE
-        n = float(n)
-        if n % 2 == 1:
-            sum += n
-            ct += 1
-        return average(sum, ct)
+        Number = float(n)
+        if Number % 2 == 1:
+            Sum += number
+        return average(Sum, comp)
 def main():
-    a = average(0.0 ,0.0)
+    Avg = average(0 ,0)
     print "The average of your odd numbers was {}.".format(a)
 main()
 
 # +2 base case is present (MUST BE LABELED) (2 points)
 # +2 recursive case is present (MUST BE LABELED) (2 points)
-# +1 base case returns sum/ct (or equivalent) 
-# +2 recursive case filters even numbers
-# +1 recursive case increments sum and ct correctly
-# +1 recursive case returns correct recursive call
-# +1 main function present AND called  
+# +1 base case returns sum/ct (or equivalent) (0 point)
+# +2 recursive case filters even numbers (2 points)
+# +1 recursive case increments sum and ct correctly (0 point)
+# +1 recursive case returns correct recursive call (0 point)
+# +1 main function present AND called  (1 point)
 
 
 
