@@ -33,3 +33,24 @@ def main():
 
 
 main()
+
+import random
+
+def guess(Number, Total):
+
+    GuessingNumber = int(raw_input("Guess a number: "))
+    if GuessingNumber == Number:
+        print "Your Guess is" + str(total_pt) 
+    elif GuessingNumber == n:
+        print "You're Awesome!"
+    elif g_n > n:
+        print "It's too big"
+        guess(n, total_pt + 1)
+    else:
+        print "It's too small"
+        total_pt + 1
+        guess(n, total_pt + 1)
+
+guess(random.randint(1, 10), 0)
+
+
